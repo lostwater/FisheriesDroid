@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.xyxd.fisher.Activity.IntroActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <cn.bingoogolapple.bgabanner.BGABanner xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/intro"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:banner_pointAutoPlayAble="false"
+        app:banner_pointTopBottomMargin="0dp"
+        >
+    </cn.bingoogolapple.bgabanner.BGABanner>
+
+    <Button
+
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="304dp"
+        android:layout_height="135dp"
+        android:text=""
+        android:id="@+id/enterButton"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#00ffffff" />
+</FrameLayout>

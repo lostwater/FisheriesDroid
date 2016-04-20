@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FisheriesDroid.iml" filepath="$PROJECT_DIR$/FisheriesDroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fisherapp/fisherapp.iml" filepath="$PROJECT_DIR$/fisherapp/fisherapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/lib.iml" filepath="$PROJECT_DIR$/lib/lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/pingpp/pingpp.iml" filepath="$PROJECT_DIR$/lib/pingpp/pingpp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/playerLibRelease/playerLibRelease.iml" filepath="$PROJECT_DIR$/lib/playerLibRelease/playerLibRelease.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib/playerskin/playerskin.iml" filepath="$PROJECT_DIR$/lib/playerskin/playerskin.iml" />
+    </modules>
+  </component>
+</project>

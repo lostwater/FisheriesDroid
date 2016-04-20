@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:enabled="false"
+            android:id="@+id/city"
+            android:title="北京" />
+        <item
+            app:itemTextColor="@color/colorAccent"
+            android:id="@+id/myorders"
+            android:title="我的订单" />
+        <item
+            android:enabled="false"
+            android:id="@+id/phone"
+            android:title="电话" />
+        <item
+            android:enabled="false"
+            android:id="@+id/empty"
+            android:title="" />
+
+        <item
+            android:id="@+id/logout"
+            android:title="退出登录" />
+    </group>
+
+
+
+</menu>

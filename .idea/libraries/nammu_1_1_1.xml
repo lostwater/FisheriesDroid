@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="nammu-1.1.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/fisherapp/build/intermediates/exploded-aar/com.github.tajchert/nammu/1.1.1/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/fisherapp/build/intermediates/exploded-aar/com.github.tajchert/nammu/1.1.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

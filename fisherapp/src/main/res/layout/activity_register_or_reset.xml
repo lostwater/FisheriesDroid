@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_horizontal"
+    android:orientation="vertical" tools:context="com.xyxd.fisher.Activity.RegisterOrResetActivity">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/loginbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!-- Login progress -->
+
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/login_progress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="#FFFF"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textColorHint="#FFFF"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="手机号"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPhonetic"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:numeric="integer"
+                    android:phoneNumber="true" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_weight="1"
+                    android:textColorHint="#FFFF"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:textColorHint="#FFFF"
+                        android:textColor="@color/colorAccent"
+                        android:id="@+id/validCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="验证码"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="textPhonetic"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:numeric="integer"
+                        android:phoneNumber="true" />
+                </android.support.design.widget.TextInputLayout>
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/sendCode"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="发送验证码"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    >
+                </Button>
+            </android.support.v7.widget.LinearLayoutCompat>
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="#FFFF"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:textColorHint="#FFFF"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="#FFFF"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:textColorHint="#FFFF"
+                    android:textColor="@color/colorAccent"
+                    android:id="@+id/cofirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFF"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/registerOrReset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="确定"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
