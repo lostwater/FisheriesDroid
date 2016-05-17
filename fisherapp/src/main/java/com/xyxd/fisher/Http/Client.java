@@ -19,7 +19,7 @@ import retrofit2.Retrofit;
 /**
  * Created by lostw on 2016/3/31.
  */
-public class Client {
+public class  Client {
     public static final String SERVERBASEURL = "http://123.56.207.193/";
     public static final String APIBASEURL = "http://123.56.207.193/";
     public static AccessToken accessToken = null;

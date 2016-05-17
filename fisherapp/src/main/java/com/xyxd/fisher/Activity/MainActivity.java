@@ -186,7 +186,7 @@ public class MainActivity extends AppCompatActivity
 
     private void startLeCloudActionLive(Live live) {
         Intent intent = getStartActivity();
-        intent.putExtra(PlayActivity.DATA, LetvParamsUtils.setActionLiveParams(live.getActivityId(), false));
+        intent.putExtra(PlayActivity.DATA, LetvParamsUtils.setActionLiveParams(live.getCloudLiveId(), false));
         startActivity(intent);
     }
     private Intent getStartActivity() {

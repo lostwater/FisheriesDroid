@@ -5,10 +5,18 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import javax.annotation.Generated;
 
+@Generated("org.jsonschema2pojo")
 public class ApplicationUser {
 
+    private List<Shop> followedShops = new ArrayList<Shop>();
+    private List<Live> followedLives = new ArrayList<Live>();
+    private Integer liveId;
+    private Live live;
     private String avatar;
+    private String createdTime;
+    private String signupClient;
     private String email;
     private Boolean emailConfirmed;
     private String passwordHash;
@@ -29,6 +37,78 @@ public class ApplicationUser {
     /**
      * 
      * @return
+     *     The followedShops
+     */
+    public List<Shop> getFollowedShops() {
+        return followedShops;
+    }
+
+    /**
+     * 
+     * @param followedShops
+     *     The followedShops
+     */
+    public void setFollowedShops(List<Shop> followedShops) {
+        this.followedShops = followedShops;
+    }
+
+    /**
+     * 
+     * @return
+     *     The followedLives
+     */
+    public List<Live> getFollowedLives() {
+        return followedLives;
+    }
+
+    /**
+     * 
+     * @param followedLives
+     *     The followedLives
+     */
+    public void setFollowedLives(List<Live> followedLives) {
+        this.followedLives = followedLives;
+    }
+
+    /**
+     * 
+     * @return
+     *     The liveId
+     */
+    public Integer getLiveId() {
+        return liveId;
+    }
+
+    /**
+     * 
+     * @param liveId
+     *     The liveId
+     */
+    public void setLiveId(Integer liveId) {
+        this.liveId = liveId;
+    }
+
+    /**
+     * 
+     * @return
+     *     The live
+     */
+    public Live getLive() {
+        return live;
+    }
+
+    /**
+     * 
+     * @param live
+     *     The live
+     */
+    public void setLive(Live live) {
+        this.live = live;
+    }
+
+    /**
+     * 
+     * @return
      *     The avatar
      */
     public String getAvatar() {
@@ -42,6 +122,42 @@ public class ApplicationUser {
      */
     public void setAvatar(String avatar) {
         this.avatar = avatar;
+    }
+
+    /**
+     * 
+     * @return
+     *     The createdTime
+     */
+    public String getCreatedTime() {
+        return createdTime;
+    }
+
+    /**
+     * 
+     * @param createdTime
+     *     The createdTime
+     */
+    public void setCreatedTime(String createdTime) {
+        this.createdTime = createdTime;
+    }
+
+    /**
+     * 
+     * @return
+     *     The signupClient
+     */
+    public String getSignupClient() {
+        return signupClient;
+    }
+
+    /**
+     * 
+     * @param signupClient
+     *     The signupClient
+     */
+    public void setSignupClient(String signupClient) {
+        this.signupClient = signupClient;
     }
 
     /**

@@ -1,412 +1,135 @@
 
 package com.xyxd.fisher.model;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
+import java.util.HashMap;
+import java.util.Map;
+import javax.annotation.Generated;
 
-import java.util.Date;
-
-
+@Generated("org.jsonschema2pojo")
 public class Live {
 
-    @SerializedName("activityCategory")
-    @Expose
-    private String activityCategory;
-    @SerializedName("activityId")
-    @Expose
-    private String activityId;
-    @SerializedName("activityName")
-    @Expose
-    private String activityName;
-    @SerializedName("activityStatus")
-    @Expose
-    private Integer activityStatus;
-    @SerializedName("coverImgUrl")
-    @Expose
-    private String coverImgUrl;
-    @SerializedName("createTime")
-    @Expose
-    private String createTime;
-    @SerializedName("description")
-    @Expose
-    private String description;
-    @SerializedName("endTime")
-    @Expose
-    private Date endTime;
-    @SerializedName("liveNum")
-    @Expose
-    private Integer liveNum;
-    @SerializedName("needFullView")
-    @Expose
-    private Integer needFullView;
-    @SerializedName("needIpWhiteList")
-    @Expose
-    private Integer needIpWhiteList;
-    @SerializedName("needRecord")
-    @Expose
-    private Integer needRecord;
-    @SerializedName("needTimeShift")
-    @Expose
-    private Integer needTimeShift;
-    @SerializedName("neededPushAuth")
-    @Expose
-    private Integer neededPushAuth;
-    @SerializedName("playMode")
-    @Expose
-    private Integer playMode;
-    @SerializedName("pushIpWhiteList")
-    @Expose
-    private String pushIpWhiteList;
-    @SerializedName("pushUrlValidTime")
-    @Expose
-    private Integer pushUrlValidTime;
-    @SerializedName("startTime")
-    @Expose
-    private Date startTime;
-    @SerializedName("userCount")
-    @Expose
-    private String userCount;
+    private Integer id;
+    private String cloudLiveId;
+    private CloudLive cloudLive;
+    private Integer liveTypeId;
+    private LiveType liveType;
+    private String chatId;
+    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
      * 
      * @return
-     *     The activityCategory
+     *     The id
      */
-    public String getActivityCategory() {
-        return activityCategory;
+    public Integer getId() {
+        return id;
     }
 
     /**
      * 
-     * @param activityCategory
-     *     The activityCategory
+     * @param id
+     *     The id
      */
-    public void setActivityCategory(String activityCategory) {
-        this.activityCategory = activityCategory;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     /**
      * 
      * @return
-     *     The activityId
+     *     The cloudLiveId
      */
-    public String getActivityId() {
-        return activityId;
+    public String getCloudLiveId() {
+        return cloudLiveId;
     }
 
     /**
      * 
-     * @param activityId
-     *     The activityId
+     * @param cloudLiveId
+     *     The cloudLiveId
      */
-    public void setActivityId(String activityId) {
-        this.activityId = activityId;
-    }
-
-    /**
-     * 
-     * @return
-     *     The activityName
-     */
-    public String getActivityName() {
-        return activityName;
-    }
-
-    /**
-     * 
-     * @param activityName
-     *     The activityName
-     */
-    public void setActivityName(String activityName) {
-        this.activityName = activityName;
+    public void setCloudLiveId(String cloudLiveId) {
+        this.cloudLiveId = cloudLiveId;
     }
 
     /**
      * 
      * @return
-     *     The activityStatus
+     *     The cloudLive
      */
-    public Integer getActivityStatus() {
-        return activityStatus;
+    public CloudLive getCloudLive() {
+        return cloudLive;
     }
 
     /**
      * 
-     * @param activityStatus
-     *     The activityStatus
+     * @param cloudLive
+     *     The cloudLive
      */
-    public void setActivityStatus(Integer activityStatus) {
-        this.activityStatus = activityStatus;
-    }
-
-    /**
-     * 
-     * @return
-     *     The coverImgUrl
-     */
-    public String getCoverImgUrl() {
-        return coverImgUrl;
-    }
-
-    /**
-     * 
-     * @param coverImgUrl
-     *     The coverImgUrl
-     */
-    public void setCoverImgUrl(String coverImgUrl) {
-        this.coverImgUrl = coverImgUrl;
+    public void setCloudLive(CloudLive cloudLive) {
+        this.cloudLive = cloudLive;
     }
 
     /**
      * 
      * @return
-     *     The createTime
+     *     The liveTypeId
      */
-    public String getCreateTime() {
-        return createTime;
+    public Integer getLiveTypeId() {
+        return liveTypeId;
     }
 
     /**
      * 
-     * @param createTime
-     *     The createTime
+     * @param liveTypeId
+     *     The liveTypeId
      */
-    public void setCreateTime(String createTime) {
-        this.createTime = createTime;
-    }
-
-    /**
-     * 
-     * @return
-     *     The description
-     */
-    public String getDescription() {
-        return description;
-    }
-
-    /**
-     * 
-     * @param description
-     *     The description
-     */
-    public void setDescription(String description) {
-        this.description = description;
+    public void setLiveTypeId(Integer liveTypeId) {
+        this.liveTypeId = liveTypeId;
     }
 
     /**
      * 
      * @return
-     *     The endTime
+     *     The liveType
      */
-    public Date getEndTime() {
-        return endTime;
+    public LiveType getLiveType() {
+        return liveType;
     }
 
     /**
      * 
-     * @param endTime
-     *     The endTime
+     * @param liveType
+     *     The liveType
      */
-    public void setEndTime(Date endTime) {
-        this.endTime = endTime;
-    }
-
-    /**
-     * 
-     * @return
-     *     The liveNum
-     */
-    public Integer getLiveNum() {
-        return liveNum;
-    }
-
-    /**
-     * 
-     * @param liveNum
-     *     The liveNum
-     */
-    public void setLiveNum(Integer liveNum) {
-        this.liveNum = liveNum;
+    public void setLiveType(LiveType liveType) {
+        this.liveType = liveType;
     }
 
     /**
      * 
      * @return
-     *     The needFullView
+     *     The chatId
      */
-    public Integer getNeedFullView() {
-        return needFullView;
+    public String getChatId() {
+        return chatId;
     }
 
     /**
      * 
-     * @param needFullView
-     *     The needFullView
+     * @param chatId
+     *     The chatId
      */
-    public void setNeedFullView(Integer needFullView) {
-        this.needFullView = needFullView;
+    public void setChatId(String chatId) {
+        this.chatId = chatId;
     }
 
-    /**
-     * 
-     * @return
-     *     The needIpWhiteList
-     */
-    public Integer getNeedIpWhiteList() {
-        return needIpWhiteList;
+    public Map<String, Object> getAdditionalProperties() {
+        return this.additionalProperties;
     }
 
-    /**
-     * 
-     * @param needIpWhiteList
-     *     The needIpWhiteList
-     */
-    public void setNeedIpWhiteList(Integer needIpWhiteList) {
-        this.needIpWhiteList = needIpWhiteList;
-    }
-
-    /**
-     * 
-     * @return
-     *     The needRecord
-     */
-    public Integer getNeedRecord() {
-        return needRecord;
-    }
-
-    /**
-     * 
-     * @param needRecord
-     *     The needRecord
-     */
-    public void setNeedRecord(Integer needRecord) {
-        this.needRecord = needRecord;
-    }
-
-    /**
-     * 
-     * @return
-     *     The needTimeShift
-     */
-    public Integer getNeedTimeShift() {
-        return needTimeShift;
-    }
-
-    /**
-     * 
-     * @param needTimeShift
-     *     The needTimeShift
-     */
-    public void setNeedTimeShift(Integer needTimeShift) {
-        this.needTimeShift = needTimeShift;
-    }
-
-    /**
-     * 
-     * @return
-     *     The neededPushAuth
-     */
-    public Integer getNeededPushAuth() {
-        return neededPushAuth;
-    }
-
-    /**
-     * 
-     * @param neededPushAuth
-     *     The neededPushAuth
-     */
-    public void setNeededPushAuth(Integer neededPushAuth) {
-        this.neededPushAuth = neededPushAuth;
-    }
-
-    /**
-     * 
-     * @return
-     *     The playMode
-     */
-    public Integer getPlayMode() {
-        return playMode;
-    }
-
-    /**
-     * 
-     * @param playMode
-     *     The playMode
-     */
-    public void setPlayMode(Integer playMode) {
-        this.playMode = playMode;
-    }
-
-    /**
-     * 
-     * @return
-     *     The pushIpWhiteList
-     */
-    public String getPushIpWhiteList() {
-        return pushIpWhiteList;
-    }
-
-    /**
-     * 
-     * @param pushIpWhiteList
-     *     The pushIpWhiteList
-     */
-    public void setPushIpWhiteList(String pushIpWhiteList) {
-        this.pushIpWhiteList = pushIpWhiteList;
-    }
-
-    /**
-     * 
-     * @return
-     *     The pushUrlValidTime
-     */
-    public Integer getPushUrlValidTime() {
-        return pushUrlValidTime;
-    }
-
-    /**
-     * 
-     * @param pushUrlValidTime
-     *     The pushUrlValidTime
-     */
-    public void setPushUrlValidTime(Integer pushUrlValidTime) {
-        this.pushUrlValidTime = pushUrlValidTime;
-    }
-
-    /**
-     * 
-     * @return
-     *     The startTime
-     */
-    public Date getStartTime() {
-        return startTime;
-    }
-
-    /**
-     * 
-     * @param startTime
-     *     The startTime
-     */
-    public void setStartTime(Date startTime) {
-        this.startTime = startTime;
-    }
-
-    /**
-     * 
-     * @return
-     *     The userCount
-     */
-    public String getUserCount() {
-        return userCount;
-    }
-
-    /**
-     * 
-     * @param userCount
-     *     The userCount
-     */
-    public void setUserCount(String userCount) {
-        this.userCount = userCount;
+    public void setAdditionalProperty(String name, Object value) {
+        this.additionalProperties.put(name, value);
     }
 
 }

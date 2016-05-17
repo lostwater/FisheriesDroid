@@ -95,6 +95,8 @@ dependencies {
 
     compile files('libs/BaiduNaviSDK_3.1.1.jar')
     compile files('libs/httpmime-4.1.2.jar')
+
+    compile group: 'javax.annotation', name: 'jsr250-api', version: '1.0'
     compile 'com.android.support:support-v4:23'
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.flyco.banner:FlycoBanner_Lib:2.0.2@aar'

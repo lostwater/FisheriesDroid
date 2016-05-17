@@ -3,9 +3,9 @@ package com.xyxd.fisher.model;
 
 import java.util.HashMap;
 import java.util.Map;
+import javax.annotation.Generated;
 
-
-
+@Generated("org.jsonschema2pojo")
 public class Shop {
 
     private Integer id;
@@ -19,11 +19,11 @@ public class Shop {
     private Double longitude;
     private Double latitude;
     private String applicationUserId;
-    private ApplicationUser applicationUser;
+    private Integer liveId;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     /**
-     * 
+     *
      * @return
      *     The id
      */
@@ -32,7 +32,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @param id
      *     The id
      */
@@ -41,7 +41,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @return
      *     The name
      */
@@ -50,7 +50,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @param name
      *     The name
      */
@@ -59,7 +59,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @return
      *     The avatarUrl
      */
@@ -68,7 +68,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @param avatarUrl
      *     The avatarUrl
      */
@@ -77,7 +77,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @return
      *     The address
      */
@@ -86,7 +86,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @param address
      *     The address
      */
@@ -95,7 +95,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @return
      *     The intro
      */
@@ -104,7 +104,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @param intro
      *     The intro
      */
@@ -113,7 +113,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @return
      *     The description
      */
@@ -122,7 +122,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @param description
      *     The description
      */
@@ -131,7 +131,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @return
      *     The surface
      */
@@ -140,7 +140,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @param surface
      *     The surface
      */
@@ -149,7 +149,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @return
      *     The verified
      */
@@ -158,7 +158,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @param verified
      *     The verified
      */
@@ -167,7 +167,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @return
      *     The longitude
      */
@@ -176,7 +176,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @param longitude
      *     The longitude
      */
@@ -185,7 +185,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @return
      *     The latitude
      */
@@ -194,7 +194,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @param latitude
      *     The latitude
      */
@@ -203,7 +203,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @return
      *     The applicationUserId
      */
@@ -212,7 +212,7 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @param applicationUserId
      *     The applicationUserId
      */
@@ -221,21 +221,21 @@ public class Shop {
     }
 
     /**
-     * 
+     *
      * @return
-     *     The applicationUser
+     *     The liveId
      */
-    public ApplicationUser getApplicationUser() {
-        return applicationUser;
+    public Integer getLiveId() {
+        return liveId;
     }
 
     /**
-     * 
-     * @param applicationUser
-     *     The applicationUser
+     *
+     * @param liveId
+     *     The liveId
      */
-    public void setApplicationUser(ApplicationUser applicationUser) {
-        this.applicationUser = applicationUser;
+    public void setLiveId(Integer liveId) {
+        this.liveId = liveId;
     }
 
     public Map<String, Object> getAdditionalProperties() {
