@@ -9,10 +9,9 @@ import com.xyxd.fisher.Http.Client;
 import com.xyxd.fisher.Http.IClient;
 import com.xyxd.fisher.Listeners.OnListFragmentInteractionListener;
 import com.xyxd.fisher.R;
+import com.xyxd.fisher.adapter.MyEventRecyclerViewAdapter;
 import com.xyxd.fisher.model.Event;
-import com.xyxd.fisher.model.Live;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,7 +32,7 @@ public class EventFragment extends MainTabRefreshFragment {
         setEventList();
     }
 
-    void setEventList()
+    protected void setEventList()
     {
         List dataList = new ArrayList();
         IClient instance = Client.instance();

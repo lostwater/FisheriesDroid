@@ -12,13 +12,18 @@
             android:id="@+id/myorders"
             android:title="我的订单" />
         <item
+            app:itemTextColor="@color/colorAccent"
+            android:id="@+id/myFav"
+            android:title="我的收藏" />
+        <item
+            app:itemTextColor="@color/colorAccent"
+            android:id="@+id/myLive"
+            android:title="我要直播" />
+
+        <item
             android:enabled="false"
             android:id="@+id/phone"
             android:title="电话" />
-        <item
-            android:enabled="false"
-            android:id="@+id/empty"
-            android:title="" />
 
         <item
             android:id="@+id/logout"

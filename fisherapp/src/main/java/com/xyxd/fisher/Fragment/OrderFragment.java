@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.xyxd.fisher.R;
+import com.xyxd.fisher.adapter.MyOrderRecyclerViewAdapter;
 import com.xyxd.fisher.model.Order;
 
 import java.util.ArrayList;

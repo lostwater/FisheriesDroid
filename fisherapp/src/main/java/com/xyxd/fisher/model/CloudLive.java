@@ -1,6 +1,7 @@
 
 package com.xyxd.fisher.model;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Generated;
@@ -23,7 +24,7 @@ public class CloudLive {
     private Integer neededPushAuth;
     private String pushIpWhiteList;
     private Integer pushUrlValidTime;
-    private String startTime;
+    private Date startTime;
     private Integer userCount;
     private Integer playMode;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
@@ -303,7 +304,7 @@ public class CloudLive {
      * @return
      *     The startTime
      */
-    public String getStartTime() {
+    public Date getStartTime() {
         return startTime;
     }
 
@@ -312,7 +313,7 @@ public class CloudLive {
      * @param startTime
      *     The startTime
      */
-    public void setStartTime(String startTime) {
+    public void setStartTime(Date startTime) {
         this.startTime = startTime;
     }
 

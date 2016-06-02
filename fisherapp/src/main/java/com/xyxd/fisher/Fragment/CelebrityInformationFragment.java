@@ -3,7 +3,6 @@ package com.xyxd.fisher.Fragment;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -15,6 +14,7 @@ import com.xyxd.fisher.Http.Client;
 import com.xyxd.fisher.Http.IClient;
 import com.xyxd.fisher.Listeners.OnListFragmentInteractionListener;
 import com.xyxd.fisher.R;
+import com.xyxd.fisher.adapter.MyHomeRecyclerViewAdapter;
 import com.xyxd.fisher.model.Information;
 
 import java.io.IOException;

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.os.Looper;
 import android.widget.Toast;
 
-import com.lecloud.leutils.LeLog;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -53,7 +52,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
         }
         String result = writer.toString();
         sb.append(result);
-        LeLog.ePringShenShou(TAG, sb.toString());
+
         new Thread(new Runnable() {
             
             @Override

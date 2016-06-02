@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="cde-sdk-0.9.90">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/playerLibRelease/libs/cde-sdk-0.9.90.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

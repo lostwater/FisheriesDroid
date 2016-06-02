@@ -72,7 +72,7 @@ public class MainTabRefreshFragment extends BaseRefreshRecylerFragment {
         mAdImageViewlist.add(imageView);
     }
 
-    void setAdsList()
+    protected void setAdsList()
     {
         IClient instance = Client.instance();
         Call<List<Ad>> callAds = instance.getHomeAds();

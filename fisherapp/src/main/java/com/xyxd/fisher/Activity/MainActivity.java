@@ -6,11 +6,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
@@ -24,22 +21,21 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.baidu.mapapi.SDKInitializer;
 import com.google.gson.Gson;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.utils.DiskCacheUtils;
+import com.nostra13.universalimageloader.utils.MemoryCacheUtils;
+import com.roughike.bottombar.BottomBar;
 import com.squareup.picasso.Picasso;
-import com.xyxd.fisher.Fragment.CelebrityFragment;
-import com.xyxd.fisher.Fragment.EventFragment;
-import com.xyxd.fisher.Fragment.HomeFragment;
-import com.xyxd.fisher.Fragment.LiveFragment;
 import com.xyxd.fisher.Http.Client;
 import com.xyxd.fisher.Http.ImageUploader;
 import com.xyxd.fisher.Listeners.OnListFragmentInteractionListener;
 import com.xyxd.fisher.R;
 import com.xyxd.fisher.model.*;
-import com.xyxd.utils.LetvParamsUtils;
+import com.xyxd.fisher.adapter.BottomPagerAdapter;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -134,6 +130,24 @@ public class MainActivity extends AppCompatActivity
                 .fit()
                 .centerCrop()
                 .into(avatarView);
+        ImageLoader imageLoader = ImageLoader.getInstance();
+        String path = Client.toUri(Client.user.getAvatar());
+        DisplayImageOptions options = new DisplayImageOptions.Builder()
+                .showImageOnLoading(R.drawable.avatar)
+                .showImageForEmptyUri(R.drawable.avatar)
+                .showImageOnFail(R.drawable.avatar)
+                .cacheInMemory(true)
+                .cacheOnDisk(true)
+                .considerExifParams(true)
+                .build();
+        File imageFile = imageLoader.getDiskCache().get(path);
+        if (imageFile.exists()) {
+            imageFile.delete();
+        }
+        MemoryCacheUtils.removeFromCache(path, imageLoader.getMemoryCache());
+        DiskCacheUtils.removeFromCache(path, imageLoader.getDiskCache());
+        imageLoader.displayImage(path, avatarView, options);
+
         ImageUploader.uploadFile(photoFile, Client.APIBASEURL+"api/Account/ChangeAvatar");
     }
 
@@ -151,12 +165,12 @@ public class MainActivity extends AppCompatActivity
     {
         if(item instanceof Live)
         {
-            //Intent intent = new Intent(MainActivity.this, WebLivePlayActivity.class);
-            //Gson gson = new Gson();
-            //String live = gson.toJson((Live)item);
-            //intent.putExtra("live",live);
-            //startActivity(intent);
-            startLeCloudActionLive((Live)item);
+            Intent intent = new Intent(MainActivity.this, WebLivePlayActivity.class);
+            Gson gson = new Gson();
+            String live = gson.toJson((Live)item);
+            intent.putExtra("live",live);
+            startActivity(intent);
+            //startLeCloudActionLive((Live)item);
         }
         if(item instanceof Information)
         {
@@ -186,11 +200,11 @@ public class MainActivity extends AppCompatActivity
 
     private void startLeCloudActionLive(Live live) {
         Intent intent = getStartActivity();
-        intent.putExtra(PlayActivity.DATA, LetvParamsUtils.setActionLiveParams(live.getCloudLiveId(), false));
+        //intent.putExtra(PlayActivity.DATA, LetvParamsUtils.setActionLiveParams(live.getCloudLiveId(), false));
         startActivity(intent);
     }
     private Intent getStartActivity() {
-        return new Intent(MainActivity.this, PlayActivity.class);
+        return new Intent(MainActivity.this, WebLivePlayActivity.class);
     }
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -200,13 +214,13 @@ public class MainActivity extends AppCompatActivity
      * may be best to switch to a
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
-    private SectionsPagerAdapter mSectionsPagerAdapter;
+    private BottomPagerAdapter mPagerAdapter;
 
     /**
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
-
+    private BottomBar mBottomBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -222,31 +236,28 @@ public class MainActivity extends AppCompatActivity
         //setSupportActionBar(toolbar);
         // Create the adapter that will return a fragment for each of the three
         // primary sections of the activity.
-        mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
-
+        mPagerAdapter = new BottomPagerAdapter(getSupportFragmentManager());
+        mPagerAdapter.mActivity = MainActivity.this;
         // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
-        mViewPager.setAdapter(mSectionsPagerAdapter);
+        mViewPager.setAdapter(mPagerAdapter);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
+        if (tabLayout != null) {
+            tabLayout.setupWithViewPager(mViewPager);
+            for (int i = 0; i < tabLayout.getTabCount(); i++) {
+                TabLayout.Tab tab = tabLayout.getTabAt(i);
+                if (tab != null)
+                    tab.setCustomView(mPagerAdapter.getTabView(i));
+            }
+
+            tabLayout.getTabAt(0).getCustomView().setSelected(true);
+        }
+
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(Client.accessToken != null) {
-                   openDrawer();
-                }
-                else
-                {
-                        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                        startActivity(intent);
-                }
-            }
-        });
 
         if (android.os.Build.VERSION.SDK_INT > 9) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -255,8 +266,12 @@ public class MainActivity extends AppCompatActivity
 
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(this).build();
         ImageLoader.getInstance().init(config);
+    }
 
-        //getSupportActionBar().setDisplayShowTitleEnabled(false);
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+       // mBottomBar.onSaveInstanceState(outState);
     }
 
     @Override
@@ -279,7 +294,6 @@ public class MainActivity extends AppCompatActivity
         View headerView = nav.getHeaderView(0);
         //View headerView = nav.inflateHeaderView(R.layout.nav_header_main);
 
-
         Menu menu  = nav.getMenu();
         MenuItem phoneItem = menu.findItem(R.id.phone);
         phoneItem.setTitle("电话 " + Client.user.getPhoneNumber());
@@ -300,12 +314,11 @@ public class MainActivity extends AppCompatActivity
                 .showImageOnLoading(R.drawable.avatar)
                 .showImageForEmptyUri(R.drawable.avatar)
                 .showImageOnFail(R.drawable.avatar)
-                .cacheInMemory(false)
-                .cacheOnDisk(false)
+                .cacheInMemory(true)
+                .cacheOnDisk(true)
                 .considerExifParams(true)
                 .build();
         imageLoader.displayImage(path, avatarView, options);
-
         usernameView = (TextView)(headerView.findViewById(R.id.usernameView));
         usernameView.setText(Client.user.getUserName());
         usernameView.setClickable(true);
@@ -332,7 +345,18 @@ public class MainActivity extends AppCompatActivity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
+        if (id == R.id.action_user)
+        {
+            if(Client.accessToken != null) {
+                openDrawer();
+            }
+            else
+            {
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+            return false;
+        }
         //noinspection SimplifiableIfStatement
         if (id == R.id.logout) {
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -346,14 +370,6 @@ public class MainActivity extends AppCompatActivity
             edit.putString("isMemory", "no");
             edit.apply();
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-            startActivity(intent);
-            return false;
-        }
-
-        if (id == R.id.myorders) {
-            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-            drawer.closeDrawer(GravityCompat.START);
-            Intent intent = new Intent(MainActivity.this, MyOrdersActivity.class);
             startActivity(intent);
             return false;
         }
@@ -377,7 +393,12 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
+        if (id == R.id.myFav){
+            DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+            drawer.closeDrawer(GravityCompat.START);
+            Intent intent = new Intent(MainActivity.this, MyFavsActivity.class);
+            startActivity(intent);
+        }
         if (id == R.id.myorders) {
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
             drawer.closeDrawer(GravityCompat.START);
@@ -420,60 +441,14 @@ public class MainActivity extends AppCompatActivity
                         try {
                             Client.userClient().changeUserName(inputName).execute();
                         } catch (IOException ex) {}
+                        Client.user.setUserName(inputName);
                         usernameView.setText(inputName);
                     }
                 });
         builder.show();
     }
 
-    /**
-     * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
-     * one of the sections/tabs/pages.
-     */
-    public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
-        public SectionsPagerAdapter(FragmentManager fm) {
-            super(fm);
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            // getItem is called to instantiate the fragment for the given page.
-            // Return a PlaceholderFragment (defined as a static inner class below).
-            switch (position) {
-                case 0:
-                    return new HomeFragment();
-                case 1:
-                    return new CelebrityFragment();
-                case 2:
-                    return new EventFragment();
-                case 3:
-                    return new LiveFragment();
-            }
-            return null;
-        }
-
-        @Override
-        public int getCount() {
-            // Show 3 total pages.
-            return 4;
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            switch (position) {
-                case 0:
-                    return "首页";
-                case 1:
-                    return "名人堂";
-                case 2:
-                    return "报名";
-                case 3:
-                    return "直播";
-            }
-            return null;
-        }
-    }
 
 
 

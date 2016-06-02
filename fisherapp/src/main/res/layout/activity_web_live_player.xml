@@ -1,15 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
 
     tools:context=".Activity.WebLivePlayActivity">
 
-
     <WebView
+        android:background="@color/black"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/webPlayer"
-    />
-</RelativeLayout>
+        android:layout_weight="1"
+        />
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/fragment_chat"
+            android:name="com.xyxd.fisher.Fragment.ChatFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout="@layout/fragment_chat" />
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_login"
+            android:background="#EEEEEE"
+            android:textColor="@color/black"
+            android:text="登陆"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <!--
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            app:layout_widthPercent="100%"
+            android:layout_height="match_parent"
+            app:layout_aspectRatio="50%"
+
+             />
+    </android.support.percent.PercentRelativeLayout>
+    -->
+
+
+</LinearLayout>

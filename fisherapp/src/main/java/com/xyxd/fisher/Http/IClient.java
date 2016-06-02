@@ -31,8 +31,11 @@ public interface IClient {
     @GET("/api/Celebrities")
     Call<List<Celebrity>> getCelebrities(@Query("page") int page,@Query("PageSize") int pageSize );
 
-    @GET("/api/Live")
-    Call<List<Live>> getLive(@Query("page") int page,@Query("PageSize") int pageSize );
+    @GET("/api/Live/LocalLive")
+    Call<List<Live>> getLive(@Query("type") int type, @Query("page") int page,@Query("PageSize") int pageSize );
+
+    @GET("/api/LiveTypes")
+    Call<List<LiveType>> getLiveTypes();
 
     @GET("/api/Ads/Home")
     Call<List<Ad>> getHomeAds();

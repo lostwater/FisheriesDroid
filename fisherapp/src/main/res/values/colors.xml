@@ -3,23 +3,13 @@
     <color name="colorPrimary">#36cfa0</color>
     <color name="colorPrimaryDark">#00969f</color>
     <color name="colorAccent">#00C2B7</color>
-    <color name="myblue">#00C2B7</color>
     <color name="background">#FFFF</color>
     <color name="lightGray">#B5B5B5</color>
     <color name="textGray">#929292</color>
     <color name="radio_button_selected_color">#ff33b5e5</color>
     <color name="radio_button_unselected_color">#ffffff</color>
 
-    <color name="style_color_primary">#d32f2f</color>
-    <color name="style_color_primary_dark">#b71c1c</color>
-    <color name="style_color_primary_light">#FFCDD2</color>
-    <color name="style_color_accent">#d32f2f</color>
-    <color name="style_window_background">#212121</color>
-    <color name="style_window_background_light">#ffffff</color>
-
-    <color name="white">#ffffff</color>
     <color name="black">#000000</color>
-    <color name="red">#ff0000</color>
 
     <color name="google_blue">#4285F4</color>
     <color name="google_red">#EA4335</color>
@@ -27,4 +17,10 @@
     <color name="google_yellow">#FBBC05</color>
 
     <color name="black_overlay">#66000000</color>
+    <color name="common_blue">#2c97e8</color>
+    <color name="common_gray">#898989</color>
+
+    <color name="divider_line_color">#afafaf</color>
+
+    <color name="login_activity_bg">#efefef</color>
 </resources>

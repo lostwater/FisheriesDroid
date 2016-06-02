@@ -11,6 +11,22 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         banner:bb_scale="0.25"/>
+    <info.hoang8f.android.segmented.SegmentedGroup
+        xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/typeSeg"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        segmentedgroup:sc_checked_text_color="#FFFFFF"
+        segmentedgroup:sc_tint_color="@color/colorPrimaryDark"
+        segmentedgroup:sc_border_width="2dp"
+        segmentedgroup:sc_corner_radius="0dp">
+        />
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
     <com.aspsine.swipetoloadlayout.SwipeToLoadLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/swipeToLoadLayout"

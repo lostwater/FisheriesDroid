@@ -15,6 +15,7 @@ import com.xyxd.fisher.Http.Client;
 import com.xyxd.fisher.Http.IClient;
 import com.xyxd.fisher.Listeners.OnListFragmentInteractionListener;
 import com.xyxd.fisher.R;
+import com.xyxd.fisher.adapter.MyCelebrityVideoRecyclerViewAdapter;
 import com.xyxd.fisher.model.Video;
 
 import java.io.IOException;

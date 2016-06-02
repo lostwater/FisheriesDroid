@@ -12,9 +12,8 @@ import android.graphics.Color;
 import android.util.Log;
 import android.widget.TextView;
 
-import com.baidu.mapapi.SDKInitializer;
-import com.lecloud.config.LeCloudPlayerConfig;
-import com.letv.proxy.LeCloudProxy;
+
+import com.avos.avoscloud.AVOSCloud;
 import com.xyxd.fisher.Activity.MainActivity;
 import com.xyxd.fisher.Http.Client;
 
@@ -44,27 +43,17 @@ public class MApplication extends Application {
         }
     }
 
-    private SDKReceiver mReceiver;
     @Override
     public void onCreate() {
         super.onCreate();
+
+        // 初始化参数依次为 this, AppId, AppKey
+        AVOSCloud.initialize(this,"F9JATEw7PKIUBQ3RObXW7n7y-gzGzoHsz","JMggWcALiKHQqkzj10mNuYHF");
+
         String processName = getProcessName(this, android.os.Process.myPid());
         if (getApplicationInfo().packageName.equals(processName)) {
 
-            //CrashHandler.getInstance(this);
-            LeCloudPlayerConfig.getInstance().setPrintSdcardLog(true).setIsApp().setUseLiveToVod(true);
-            LeCloudProxy.init(getApplicationContext());
         }
-
-        // 注册 SDK 广播监听者
-        IntentFilter iFilter = new IntentFilter();
-        iFilter.addAction(SDKInitializer.SDK_BROADTCAST_ACTION_STRING_PERMISSION_CHECK_OK);
-        iFilter.addAction(SDKInitializer.SDK_BROADTCAST_ACTION_STRING_PERMISSION_CHECK_ERROR);
-        iFilter.addAction(SDKInitializer.SDK_BROADCAST_ACTION_STRING_NETWORK_ERROR);
-        mReceiver = new SDKReceiver();
-        registerReceiver(mReceiver, iFilter);
-
-        SDKInitializer.initialize(this);
 
          String isMemory = "";//isMemory变量用来判断SharedPreferences有没有数据，包括上面的YES和NO
          String FILE = "saveUserNamePwd";//用于保存SharedPreferences的文件

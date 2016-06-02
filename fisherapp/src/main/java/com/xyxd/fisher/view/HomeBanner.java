@@ -51,12 +51,19 @@ public class HomeBanner extends BaseIndicatorBanner<Ad, HomeBanner> {
         ImageView iv =(ImageView) View.inflate(mContext,R.layout.homebanner,null);
 
         final Ad item = mDatas.get(position);
-        int itemWidth =getWidth();
+        int itemWidth = getWidth();
         int itemHeight =  getHeight();
         iv.setScaleType(ImageView.ScaleType.CENTER_CROP);
         iv.setLayoutParams(new LinearLayout.LayoutParams(itemWidth, itemHeight));
         String imgUrl = Client.toUri(item.getAvatarUrl());
-
+        if ( itemWidth == 0)
+        {
+            itemWidth = 1;
+        }
+        if ( itemHeight == 0)
+        {
+            itemHeight = 1;
+        }
         if (!TextUtils.isEmpty(imgUrl)) {
             Glide.with(mContext)
                     .load(imgUrl)

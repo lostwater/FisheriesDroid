@@ -19,7 +19,6 @@ import com.xyxd.fisher.R;
 import com.xyxd.fisher.model.Celebrity;
 import com.xyxd.fisher.model.Information;
 import com.xyxd.fisher.model.Video;
-import com.xyxd.utils.LetvParamsUtils;
 
 import info.hoang8f.android.segmented.SegmentedGroup;
 
@@ -104,13 +103,14 @@ public class CelebrityActivity extends AppCompatActivity
 
     private void startLecloudVod(Video video) {
         Intent intent;
-            intent = new Intent(CelebrityActivity.this, PlayActivity.class);
-        String uuid = "nal4hqaahb";
-        String vuid = video.getVu();
+            intent = new Intent(CelebrityActivity.this, WebVodActivity.class);
+        intent.putExtra("vuid",video.getVu());
+        //String uuid = "nal4hqaahb";
+        //String vuid = video.getVu();
 
 //        Bundle bundle = LetvParamsUtils.setVodParams(etUUID.getText().toString().trim(), etVUID.getText().toString().trim(), "", "151398", "", false);
-        Bundle bundle = LetvParamsUtils.setVodParams(uuid, vuid, "", "802439", "");
-        intent.putExtra(PlayActivity.DATA, bundle);
+        //Bundle bundle = LetvParamsUtils.setVodParams(uuid, vuid, "", "802439", "");
+        //intent.putExtra(PlayActivity.DATA, bundle);
         startActivity(intent);
     }
 

@@ -9,10 +9,9 @@ import com.xyxd.fisher.Http.Client;
 import com.xyxd.fisher.Http.IClient;
 import com.xyxd.fisher.Listeners.OnListFragmentInteractionListener;
 import com.xyxd.fisher.R;
+import com.xyxd.fisher.adapter.MyCelebrityRecyclerViewAdapter;
 import com.xyxd.fisher.model.Celebrity;
-import com.xyxd.fisher.model.Information;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 

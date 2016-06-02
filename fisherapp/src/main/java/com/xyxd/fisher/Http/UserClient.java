@@ -1,7 +1,9 @@
 package com.xyxd.fisher.Http;
 
 import com.xyxd.fisher.model.ApplicationUser;
+import com.xyxd.fisher.model.Event;
 import com.xyxd.fisher.model.EventStatu;
+import com.xyxd.fisher.model.Live;
 import com.xyxd.fisher.model.Order;
 
 import java.util.List;
@@ -24,6 +26,12 @@ public interface UserClient {
 
     @GET("/api/Orders")
     Call<List<Order>> getOrders(@Query("timePara") int time,@Query("statuPara") int statu);
+
+    @GET("/api/Account/Lives")
+    Call<List<Live>> getMyLives();
+
+    @GET("/api/Account/Lives")
+    Call<List<Event>> getMyShopEvents();
 
     @GET("/api/Events/EventStatu/{id}")
     Call<EventStatu> getEventStatu(@Path("id") int id);

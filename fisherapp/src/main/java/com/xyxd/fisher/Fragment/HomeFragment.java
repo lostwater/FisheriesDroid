@@ -2,31 +2,30 @@ package com.xyxd.fisher.Fragment;
 
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import com.aspsine.swipetoloadlayout.SwipeToLoadLayout;
-import com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader;
 import com.xyxd.fisher.Http.Client;
 import com.xyxd.fisher.Http.IClient;
 import com.xyxd.fisher.Listeners.OnListFragmentInteractionListener;
 import com.xyxd.fisher.R;
+import com.xyxd.fisher.adapter.MyHomeRecyclerViewAdapter;
 import com.xyxd.fisher.model.Information;
 import com.xyxd.fisher.model.InformationType;
+import com.xyxd.fisher.widget.LoadMoreFooterView;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import cn.bingoogolapple.bgabanner.BGABanner;
 import info.hoang8f.android.segmented.SegmentedGroup;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+
+import static com.xyxd.fisher.Http.Client.instance;
 
 /**
  * A fragment representing a list of Items.
@@ -34,7 +33,7 @@ import retrofit2.Response;
  * Activities containing this fragment MUST implement the {@link OnListFragmentInteractionListener}
  * interface.
  */
-public class HomeFragment extends MainTabRefreshFragment
+public class HomeFragment extends BaseMainTabFragment
         implements RadioGroup.OnCheckedChangeListener
 {
     LayoutInflater layoutInflater;
@@ -66,42 +65,42 @@ public class HomeFragment extends MainTabRefreshFragment
 
     void setInfoList()
     {
-        IClient instance = Client.instance();
-        Call<List<Information>> call = instance.getInformation(selectTypeId, page, pageSize);
+        IClient instance = instance();
+        Call<List<Information>> call = instance.getInformation(selectTypeId, mPage, mPageSize);
         call.enqueue(new Callback<List<Information>>() {
             @Override
             public void onResponse(Response<List<Information>> response) {
                 if(response!=null)
                 {
                     if(response.body().size()>0)
-                    {;
-                        page++;
+                    {
+                        mPage++;
                         appendList(response.body());
                     }
                 }
-                mSwipeToLoadLayout.setRefreshing(false);
-                mSwipeToLoadLayout.setLoadingMore(false);
-
+                mRecyclerView.setRefreshing(false);
+                loadMoreFooterView.setStatus(LoadMoreFooterView.Status.GONE);
+                //mRecyclerView.loa
             }
 
             @Override
             public void onFailure(Throwable t) {
-                mSwipeToLoadLayout.setRefreshing(false);
-                mSwipeToLoadLayout.setLoadingMore(false);
-
+                loadMoreFooterView.setStatus(LoadMoreFooterView.Status.GONE);
+                mRecyclerView.setRefreshing(false);
+                //mRecyclerView.setLoadingMore(false);
             }
         });
     }
 
     void setTypeList()
     {
-        IClient instance = Client.instance();
+        IClient instance = instance();
         Call<List<InformationType>> callTypes = instance.getInformationTypes();
         callTypes.enqueue(new Callback<List<InformationType>>() {
             @Override
             public void onResponse(Response<List<InformationType>> response) {
                 typeList = response.body();
-                typeSegment = (SegmentedGroup) getActivity().findViewById(R.id.typeSeg);
+                typeSegment = (SegmentedGroup)getView().findViewById(R.id.typeSeg);
                 typeSegment.setOnCheckedChangeListener(HomeFragment.this);
                 segButtons.clear();
                 for (InformationType informationType : typeList) {
@@ -127,51 +126,28 @@ public class HomeFragment extends MainTabRefreshFragment
         });
     }
 
-    @Override
-    public void onStop() {
-        super.onStop();
-
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        layoutInflater = inflater;
-        View view = inflater.inflate(R.layout.fragment_home_list, container, false);
-        mRecyclerViewAdapter = new MyHomeRecyclerViewAdapter(mDatalist,mListener);
+        fragmentLayoutId = R.layout.fragment_home_list;
+        mRecyclerViewAdapter = new MyHomeRecyclerViewAdapter(mDataList,mListener);
         mAdCat = 0;
 
+        View view = super.onCreateView(inflater,container,savedInstanceState);
+        layoutInflater = inflater;
         setTypeList();
-
-
-        View header = (View)inflater.inflate(R.layout.homeheader,null);
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.swipe_target);
-// set LayoutManager for your RecyclerView
-        //header.attachTo(recyclerView);
-
         return view;
     }
 
 
     @Override
-    public void onResume() {
-        super.onResume();
-
-    }
-
-    @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-
-    }
-
-    @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         selectTypeId = checkedId;
-        mSwipeToLoadLayout.post(new Runnable() {
+        mRecyclerView.post(new Runnable() {
             @Override
             public void run() {
-                mSwipeToLoadLayout.setRefreshing(true);
+                mRecyclerView.setRefreshing(true);
             }
         });
     }

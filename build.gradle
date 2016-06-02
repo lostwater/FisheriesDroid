@@ -2,15 +2,22 @@
 buildscript {
     repositories {
         jcenter()
+        maven {
+            url "http://mvn.leancloud.cn/nexus/content/repositories/releases"
+        }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.1.0-beta1'
+        classpath 'com.android.tools.build:gradle:2.2.0-alpha2'
+        classpath 'com.android.tools.build:gradle:1.0.0'
     }
 }
 
 allprojects {
     repositories {
         jcenter()
+        maven {
+            url "http://mvn.leancloud.cn/nexus/content/repositories/releases"
+        }
     }
 }
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
