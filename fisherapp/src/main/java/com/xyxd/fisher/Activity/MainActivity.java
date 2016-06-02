@@ -1,8 +1,13 @@
 package com.xyxd.fisher.Activity;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.ColorDrawable;
+import android.net.http.SslError;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
@@ -14,13 +19,25 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.util.TypedValue;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.webkit.SslErrorHandler;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.view.ViewGroup.LayoutParams;
 import com.google.gson.Gson;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -58,6 +75,7 @@ public class MainActivity extends AppCompatActivity
 {
     CircleImageView avatarView;
     TextView usernameView;
+    View mBaseView;
 
     protected void onChooserWithGalleryClicked() {
         EasyImage.openChooserWithGallery(this, "选择源", 0);
@@ -226,7 +244,6 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         EasyImage.configuration(this)
                 .setImagesFolderName("tempPics")
                 .saveInAppExternalFilesDir()
@@ -357,6 +374,16 @@ public class MainActivity extends AppCompatActivity
             }
             return false;
         }
+        if (id == R.id.action_weather)
+        {
+            //View view = get
+            View view = findViewById(R.id.main_content);
+            showWeather(view);
+            return false;
+        }
+
+
+
         //noinspection SimplifiableIfStatement
         if (id == R.id.logout) {
             DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -447,6 +474,80 @@ public class MainActivity extends AppCompatActivity
                 });
         builder.show();
     }
+
+    private void showWeather(View view) {
+
+        // 一个自定义的布局，作为显示的内容
+
+        LayoutInflater inflater = (LayoutInflater) MainActivity.this
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+        View contentView = inflater.inflate(
+                R.layout.layout_weather, null);
+
+        // 设置按钮的点击事件
+        /*
+        Button button = (Button) contentView.findViewById(R.id.button1);
+        button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(mContext, "button is pressed",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+        */
+        /*
+        PopupWindow popupWindow = new PopupWindow(this);
+        View layout = getLayoutInflater().inflate(R.layout.layout_weather, null);
+        popupWindow.setContentView(layout);
+
+        WebView webView = (WebView)layout.findViewById(R.id.webView);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setWebChromeClient(new WebChromeClient());
+        webView.getSettings().setDomStorageEnabled(true);
+        webView.getSettings().setLoadWithOverviewMode(true);
+        webView.getSettings().setUseWideViewPort(true);
+        webView.loadUrl("http://console.xiyuanxiongdi.com/Account/Weather");
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                //当返回值是true的时候由webView来打开，为false的时候则由第三方或者系统默认的浏览器打开
+                //return false;
+                //view.loadUrl(url);
+                return true;
+            }
+        });
+        */
+        int h = (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 300, getResources().getDisplayMetrics());
+        int w = (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 200, getResources().getDisplayMetrics());
+
+        final PopupWindow popupWindow = new PopupWindow(contentView,w,h);
+        WebView webView = (WebView)contentView.findViewById(R.id.webView);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setWebChromeClient(new WebChromeClient());
+        webView.getSettings().setDomStorageEnabled(true);
+        webView.getSettings().setLoadWithOverviewMode(true);
+        webView.getSettings().setUseWideViewPort(true);
+        webView.loadUrl("http://console.xiyuanxiongdi.com/Account/Weather");
+        webView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                //当返回值是true的时候由webView来打开，为false的时候则由第三方或者系统默认的浏览器打开
+                //return false;
+                //view.loadUrl(url);
+                return true;
+            }
+        });
+        popupWindow.setTouchable(true);
+        popupWindow.setFocusable(true);
+        popupWindow.setOutsideTouchable(true);
+        popupWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        popupWindow.showAtLocation(view, Gravity.CENTER,0,0);
+
+
+    }
+
 
 
 

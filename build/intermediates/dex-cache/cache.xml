@@ -214,7 +214,7 @@
         jumboMode="true"
         optimize="false"
         revision="23.0.3"
-        sha1="0f40158cedcc7adc808a46a8e4fae551664f1343">
+        sha1="fa44c80652674e9f3121c1520f47054fe72c78ee">
         <dex dex="L:\Documents\Projects\FisheriesDroid\fisherapp\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_a31c78552155681e16cdf37a817058b869a2fed4\classes.dex" />
     </item>
     <item
@@ -457,7 +457,7 @@
         jumboMode="true"
         optimize="false"
         revision="23.0.3"
-        sha1="8510dc10c573d30a163f3235c152d60bf4990c5b">
+        sha1="19296a0eaefacf9efa6604c1b0be5f281648bcc4">
         <dex dex="L:\Documents\Projects\FisheriesDroid\fisherapp\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_739dd422786f93091e8b3114b094dcb6473c6ae7\classes.dex" />
     </item>
     <item

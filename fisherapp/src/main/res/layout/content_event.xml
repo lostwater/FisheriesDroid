@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#EEEEEE"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -12,6 +13,7 @@
     tools:context="com.xyxd.fisher.Activity.EventActivity"
     tools:showIn="@layout/activity_event">
     <android.support.v7.widget.LinearLayoutCompat
+        android:background="#EEEEEE"
         android:id="@+id/viewContent"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -87,9 +89,16 @@
         android:layout_marginBottom="5dp"
         android:background="#FFFFFF"
         >
-
-
     </GridLayout>
+        <Button
+            android:drawableLeft="@drawable/ic_unbook"
+            android:text="关注渔场"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_mark"
+            android:background="#00ffffff" />
         <Button
             android:background="#FFFFFF"
             android:layout_width="match_parent"

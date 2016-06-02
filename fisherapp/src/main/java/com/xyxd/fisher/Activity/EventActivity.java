@@ -34,10 +34,14 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
+import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import static com.xyxd.fisher.Http.Client.userClient;
+
 public class EventActivity extends AppCompatActivity {
+    Shop mShop;
     Event event;
     Button register;
     ImageView avatarView;
@@ -47,6 +51,7 @@ public class EventActivity extends AppCompatActivity {
     TextView discountprice;
     TextView contentView;
     Button address;
+    Button mMarkButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,7 +63,7 @@ public class EventActivity extends AppCompatActivity {
         String str = getIntent().getExtras().get("event").toString();
         Gson gson = new Gson();
         event = gson.fromJson(str, Event.class);
-
+        mShop = event.getShop();
         avatarView = (ImageView)findViewById(R.id.avatarView);
         name = (TextView)findViewById(R.id.name);
         intro  = (TextView)findViewById(R.id.intro);
@@ -67,6 +72,7 @@ public class EventActivity extends AppCompatActivity {
         contentView = (TextView)findViewById(R.id.content);
         address = (Button)findViewById(R.id.address);
         register = (Button)findViewById(R.id.register);
+        mMarkButton = (Button)findViewById(R.id.button_mark);
 
     }
 
@@ -75,6 +81,7 @@ public class EventActivity extends AppCompatActivity {
         super.onResume();
         setContent();
         setRegisterButton();
+        setMarkButton();
     }
 
     void setContent()
@@ -127,6 +134,40 @@ public class EventActivity extends AppCompatActivity {
         contentView.setText(content);
     }
 
+    void setMarkButton()
+    {
+        if(Client.accessToken == null)
+        {
+
+            mMarkButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(EventActivity.this, LoginActivity.class);
+                    startActivity(intent);
+                }
+            });
+        }
+        else
+        {
+            mMarkButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(isMarked()) {
+                        mMarkButton.setText("取消关注");
+                        mMarkButton.setCompoundDrawablesWithIntrinsicBounds( R.drawable.ic_book, 0, 0, 0);
+                        unmarkShop();
+                    }
+                    else {
+                        mMarkButton.setText("关注渔场");
+                        mMarkButton.setCompoundDrawablesWithIntrinsicBounds( R.drawable.ic_unbook, 0, 0, 0);
+                        markShop();
+                    }
+                }
+            });
+
+        }
+    }
+
     void setRegisterButton(){
         if(Client.accessToken == null)
         {
@@ -140,7 +181,7 @@ public class EventActivity extends AppCompatActivity {
             });
         }
         else {
-            Client.userClient().getEventStatu(event.getId()).enqueue(new Callback<EventStatu>() {
+            userClient().getEventStatu(event.getId()).enqueue(new Callback<EventStatu>() {
                 @Override
                 public void onResponse(Response<EventStatu> response) {
                     EventStatu statu = response.body();
@@ -166,7 +207,7 @@ public class EventActivity extends AppCompatActivity {
 
     void CreateOrder()
     {
-        Client.userClient().postCreateOrder(event.getId()).enqueue(new Callback<Order>() {
+        userClient().postCreateOrder(event.getId()).enqueue(new Callback<Order>() {
             @Override
             public void onResponse(Response<Order> response) {
                 Order order = response.body();
@@ -275,6 +316,88 @@ public class EventActivity extends AppCompatActivity {
         }
         //判断packageNames中是否有目标程序的包名，有TRUE，没有FALSE
         return packageNames.contains(packageName.trim());
+    }
+
+    boolean isMarked()
+    {
+        for (Shop shop:Client.user.getFollowedShops()
+             ) {
+            if(shop.getId() == mShop.getId())
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    Shop getShop()
+    {
+        for (Shop shop:Client.user.getFollowedShops()
+                ) {
+            if(shop.getId() == mShop.getId())
+            {
+                return shop;
+            }
+        }
+        return null;
+    }
+
+    void markShop()
+    {
+        Call<Void> call = Client.userClient().followShop(mShop.getId());
+        call.enqueue(new Callback<Void>() {
+            @Override
+            public void onResponse(Response<Void> response) {
+                if(response.isSuccess())
+                {
+                    mMarkButton.setText("取消关注");
+                    mMarkButton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_book,0 ,0,0);
+                    Client.user.getFollowedShops().add(mShop);
+                }
+                else
+                {
+                    Toast.makeText(getApplicationContext(), "操作失败",
+                            Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Throwable t) {
+                Toast.makeText(getApplicationContext(), "操作失败",
+                        Toast.LENGTH_SHORT).show();
+            }
+         });
+
+    }
+
+    void unmarkShop()
+    {
+        Call<Void> call = Client.userClient().unfollowShop(mShop.getId());
+        call.enqueue(new Callback<Void>() {
+            @Override
+            public void onResponse(Response<Void> response) {
+                if(response.isSuccess())
+                {
+                    mMarkButton.setText("关注渔场");
+                    mMarkButton.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_unbook,0 ,0,0);
+                    Shop shop = getShop();
+                    if(shop != null)
+                    {
+                        Client.user.getFollowedShops().remove(shop);
+                    }
+                }
+                else
+                {
+                    Toast.makeText(getApplicationContext(), "操作失败",
+                            Toast.LENGTH_SHORT).show();
+                }
+            }
+            @Override
+            public void onFailure(Throwable t) {
+                Toast.makeText(getApplicationContext(), "操作失败",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 

@@ -14,8 +14,13 @@ import com.xyxd.fisher.Http.Client;
 import com.xyxd.fisher.Listeners.OnListFragmentInteractionListener;
 import com.xyxd.fisher.R;
 import com.xyxd.fisher.model.Event;
+import com.xyxd.fisher.model.Shop;
 
+import java.text.DateFormat;
+import java.text.NumberFormat;
+import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * {@link RecyclerView.Adapter} that can display a {@link DummyItem} and makes a call to the
@@ -35,7 +40,7 @@ public class MyEventRecyclerViewAdapter extends RecyclerView.Adapter<MyEventRecy
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.fragment_celebrity_item, parent, false);
+                .inflate(R.layout.fragment_event_item, parent, false);
         return new ViewHolder(view);
     }
 
@@ -43,9 +48,11 @@ public class MyEventRecyclerViewAdapter extends RecyclerView.Adapter<MyEventRecy
     public void onBindViewHolder(final ViewHolder holder, int position) {
 
         holder.mItem = mValues.get(position);
-        holder.mTitleView.setText(mValues.get(position).getName());
+        Event event = holder.mItem;
+        Shop shop = event.getShop();
+
         ImageLoader imageLoader = ImageLoader.getInstance();
-        String path = Client.toUri(holder.mItem.getAvatarUrl());
+        String path = Client.toUri(event.getAvatarUrl());
         DisplayImageOptions options = new DisplayImageOptions.Builder()
                 .showImageOnLoading(R.drawable.avatar)
                 .showImageForEmptyUri(R.drawable.avatar)
@@ -55,6 +62,33 @@ public class MyEventRecyclerViewAdapter extends RecyclerView.Adapter<MyEventRecy
                 .considerExifParams(true)
                 .build();
         imageLoader.displayImage(path, holder.mImageView, options);
+
+        holder.mTitleView.setText(shop.getName());
+
+        DateFormat df = new SimpleDateFormat("MM月dd");
+        String dateString = df.format(event.getEventFrom());
+        holder.mTextTime.setText(dateString);
+
+        Locale locale = new Locale("zh", "CN");
+        NumberFormat currencyFormatter = NumberFormat.getCurrencyInstance(locale);
+        holder.mTextPrice.setText(currencyFormatter.format(event.getDiscountPrice()));
+
+        holder.mTextIntro.setText(event.getIntro());
+
+        if(!shop.getVerified())
+        {
+            holder.mIVContract.setImageResource(R.drawable.ic_noncontract);
+        }
+        if(shop.getLiveId() == null)
+        {
+            holder.mIVLive.setImageResource(R.drawable.ic_nonlive);
+        }
+        if(Double.compare(event.getDiscountPrice(),event.getPrice())  == 0)
+        {
+            holder.mIVDiscount.setImageResource(R.drawable.ic_nondiscount);
+        }
+
+
 
         holder.mView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,13 +111,27 @@ public class MyEventRecyclerViewAdapter extends RecyclerView.Adapter<MyEventRecy
         public final View mView;
         public final TextView mTitleView;
         public final ImageView mImageView;
+        public final TextView mTextTime;
+        public final TextView mTextPrice;
+        public final TextView mTextIntro;
+
+        public final ImageView mIVContract;
+        public final ImageView mIVDiscount;
+        public final ImageView mIVLive;
+
         public Event mItem;
 
         public ViewHolder(View view) {
             super(view);
             mView = view;
-            mTitleView = (TextView) view.findViewById(R.id.title);
+            mTitleView = (TextView) view.findViewById(R.id.text_title);
             mImageView = (ImageView) view.findViewById(R.id.avatar);
+            mTextTime  = (TextView) view.findViewById(R.id.text_time);
+            mTextPrice  = (TextView) view.findViewById(R.id.text_price);
+            mTextIntro  = (TextView) view.findViewById(R.id.text_intro);
+            mIVContract = (ImageView) view.findViewById(R.id.iv_contract);
+            mIVDiscount = (ImageView) view.findViewById(R.id.iv_discount);
+            mIVLive = (ImageView) view.findViewById(R.id.iv_live);
         }
 
         @Override

@@ -30,7 +30,7 @@ public interface UserClient {
     @GET("/api/Account/Lives")
     Call<List<Live>> getMyLives();
 
-    @GET("/api/Account/Lives")
+    @GET("/api/Account/Shops")
     Call<List<Event>> getMyShopEvents();
 
     @GET("/api/Events/EventStatu/{id}")
@@ -42,15 +42,29 @@ public interface UserClient {
     @GET("/api/Orders/{id}")
     Call<Order> getOrder(@Path("id") int id);
 
+
+
+    @POST("/api/Shops/Follow/{id}")
+    Call<Void> followShop(@Path("id") int id);
+
+    @POST("/api/Shops/Unfollow/{id}")
+    Call<Void> unfollowShop(@Path("id") int id);
+
+    @POST("/api/Live/Follow/{id}")
+    Call<Void> followLive(@Path("id") int id);
+
+    @POST("/api/Live/Unfollow/{id}")
+    Call<Void> unfollowLive(@Path("id") int id);
+
     @POST("/api/Payments/Request")
     Call<Object> getPaymentCharge(@Query("orderId") int id);
 
     @POST("/api/Account/ChangeUsername")
-    Call<Object> changeUserName(@Query("username") String username);
+    Call<Void> changeUserName(@Query("username") String username);
 
 
     @Headers("encrypt:multipart/form-data")
     @POST("/api/Account/ChangeAvatar")
-    Call<Object> changeAvatar(@Body RequestBody file);
+    Call<Void> changeAvatar(@Body RequestBody file);
 
 }
