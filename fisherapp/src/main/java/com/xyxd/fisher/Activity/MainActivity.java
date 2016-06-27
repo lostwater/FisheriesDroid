@@ -39,6 +39,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.view.ViewGroup.LayoutParams;
 import com.google.gson.Gson;
+import com.letv.recorder.RecorderLetvActivity;
+import com.letv.recorder.data.LetvStreamData;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -374,15 +376,12 @@ public class MainActivity extends AppCompatActivity
             }
             return false;
         }
-        if (id == R.id.action_weather)
-        {
+        if (id == R.id.action_weather) {
             //View view = get
             View view = findViewById(R.id.main_content);
             showWeather(view);
             return false;
         }
-
-
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.logout) {
@@ -443,8 +442,11 @@ public class MainActivity extends AppCompatActivity
             edit.putString("password", null);
             edit.putString("isMemory", "no");
             edit.apply();
-
+        } else if (id == R.id.myLive){
+            Intent intent = new Intent(MainActivity.this, LiveRequestActivity.class);
+            startActivity(intent);
         }
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -544,14 +546,7 @@ public class MainActivity extends AppCompatActivity
         popupWindow.setOutsideTouchable(true);
         popupWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         popupWindow.showAtLocation(view, Gravity.CENTER,0,0);
-
-
     }
-
-
-
-
-
 
 
 

@@ -215,8 +215,8 @@ public class EventActivity extends AppCompatActivity {
                 {
                     Intent intent = new Intent(EventActivity.this, OrderActivity.class);
                     Gson gson = new Gson();
-                    String str = gson.toJson(event);
-                    intent.putExtra("event",str);
+                    String str = gson.toJson(order);
+                    intent.putExtra("order",str);
                     startActivity(intent);
                 }
                 else

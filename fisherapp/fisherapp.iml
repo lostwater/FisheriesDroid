@@ -93,10 +93,10 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/cn.bingoogolapple/bga-indicator/1.0.0/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/cn.bingoogolapple/bga-refreshlayout/1.1.3/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/cn.bingoogolapple/bga-swipeitemlayout/1.0.3/jars" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-feedback/v3.13.12/jars" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-push/v3.13.12/jars" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-search/v3.13.12/jars" />
-      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.13.12/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-feedback/v3.13.15/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-push/v3.13.15/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-search/v3.13.15/jars" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-sns/v3.13.15/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/cn.pedant.sweetalert/library/1.3/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support.constraint/constraint-layout/1.0.0-alpha1/jars" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars" />
@@ -129,6 +129,7 @@
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/instant-run-support" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/jniLibs" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/manifests" />
+      <excludeFolder url="file://$MODULE_DIR$/build/intermediates/pre-dexed" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/reload-dex" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/res" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/restart-dex" />
@@ -145,10 +146,9 @@
     <orderEntry type="library" exported="" name="okio-1.6.0" level="project" />
     <orderEntry type="library" exported="" name="constraint-layout-solver-1.0.0-alpha1" level="project" />
     <orderEntry type="library" exported="" name="bga-banner-2.0.3" level="project" />
-    <orderEntry type="library" exported="" name="avoscloud-push-v3.13.12" level="project" />
     <orderEntry type="library" exported="" name="percent-23.4.0" level="project" />
     <orderEntry type="library" exported="" name="Java-WebSocket-1.3.1-leancloud" level="project" />
-    <orderEntry type="library" exported="" name="avoscloud-sns-v3.13.12" level="project" />
+    <orderEntry type="library" exported="" name="avoscloud-sns-v3.13.15" level="project" />
     <orderEntry type="library" exported="" name="support-v4-23.4.0" level="project" />
     <orderEntry type="library" exported="" name="bga-refreshlayout-1.1.3" level="project" />
     <orderEntry type="library" exported="" name="glide-3.6.1" level="project" />
@@ -168,9 +168,9 @@
     <orderEntry type="library" exported="" name="okio-1.6.0-leancloud" level="project" />
     <orderEntry type="library" exported="" name="jpinyin-1.0" level="project" />
     <orderEntry type="library" exported="" name="library-1.3" level="project" />
+    <orderEntry type="library" exported="" name="avoscloud-statistics-v3.13.15" level="project" />
     <orderEntry type="library" exported="" name="FlycoBanner_Lib-2.0.2" level="project" />
     <orderEntry type="library" exported="" name="android-segmented-1.0.6" level="project" />
-    <orderEntry type="library" exported="" name="avoscloud-statistics-v3.13.12" level="project" />
     <orderEntry type="library" exported="" name="recyclerviewheader2-2.0.0" level="project" />
     <orderEntry type="library" exported="" name="bga-swipeitemlayout-1.0.3" level="project" />
     <orderEntry type="library" exported="" name="okhttp-3.0.0-RC1" level="project" />
@@ -180,10 +180,10 @@
     <orderEntry type="library" exported="" name="fastjson-1.1.39-leancloud" level="project" />
     <orderEntry type="library" exported="" name="animated-vector-drawable-23.4.0" level="project" />
     <orderEntry type="library" exported="" name="SwipeToLoadLayout-v1.0.2" level="project" />
-    <orderEntry type="library" exported="" name="avoscloud-feedback-v3.13.12" level="project" />
-    <orderEntry type="library" exported="" name="avoscloud-search-v3.13.12" level="project" />
-    <orderEntry type="library" exported="" name="avoscloud-sdk-v3.13.12" level="project" />
+    <orderEntry type="library" exported="" name="avoscloud-sdk-v3.13.15" level="project" />
     <orderEntry type="library" exported="" name="recyclerview-v7-23.4.0" level="project" />
+    <orderEntry type="library" exported="" name="avoscloud-feedback-v3.13.15" level="project" />
+    <orderEntry type="library" exported="" name="avoscloud-search-v3.13.15" level="project" />
     <orderEntry type="library" exported="" name="jsr250-api-1.0" level="project" />
     <orderEntry type="library" exported="" name="library-1.2.0" level="project" />
     <orderEntry type="library" exported="" name="support-vector-drawable-23.4.0" level="project" />
@@ -200,9 +200,11 @@
     <orderEntry type="library" exported="" name="protobuf-java-2.6.1" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="hamcrest-core-1.3" level="project" />
     <orderEntry type="library" exported="" name="bga-adapter-1.0.8" level="project" />
+    <orderEntry type="library" exported="" name="avoscloud-push-v3.13.15" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="junit-4.12" level="project" />
     <orderEntry type="library" exported="" name="SMSSDKGUI-2.0.2-" level="project" />
     <orderEntry type="library" exported="" name="MobTools-2016.0303.1229" level="project" />
     <orderEntry type="module" module-name="pingpp" exported="" />
+    <orderEntry type="module" module-name="leRecorderDemo" exported="" />
   </component>
 </module>

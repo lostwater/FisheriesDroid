@@ -1,1 +1,1 @@
-include ':fisherapp', ':lib:pingpp'
+include ':fisherapp', ':lib:pingpp', ':leRecorderDemo', ':leRecorderSkin'

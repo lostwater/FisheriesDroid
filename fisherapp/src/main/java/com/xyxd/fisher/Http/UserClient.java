@@ -5,12 +5,15 @@ import com.xyxd.fisher.model.Event;
 import com.xyxd.fisher.model.EventStatu;
 import com.xyxd.fisher.model.Live;
 import com.xyxd.fisher.model.Order;
+import com.xyxd.fisher.model.UserLiveRequest;
 
 import java.util.List;
 
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.Field;
+import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
@@ -30,6 +33,9 @@ public interface UserClient {
     @GET("/api/Account/Lives")
     Call<List<Live>> getMyLives();
 
+    @GET("/api/Account/LiveRequest")
+    Call<UserLiveRequest> getMyLiveRequest();
+
     @GET("/api/Account/Shops")
     Call<List<Event>> getMyShopEvents();
 
@@ -42,7 +48,9 @@ public interface UserClient {
     @GET("/api/Orders/{id}")
     Call<Order> getOrder(@Path("id") int id);
 
-
+    @FormUrlEncoded
+    @POST("/api/UserLiveRequests")
+    Call<Void> requestUserLive(@Field(value = "fullName",encoded = true) String fullName, @Field("citizenId") String citizenId, @Field(value = "liveName",encoded = true) String liveName);
 
     @POST("/api/Shops/Follow/{id}")
     Call<Void> followShop(@Path("id") int id);

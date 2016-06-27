@@ -2,6 +2,7 @@
     <string name="app_name">一号鱼媒体</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_event">赛事活动</string>
+    <string name="title_activity_info">文章资讯</string>
     <string name="title_activity_celebrity">名人堂</string>
     <string name="action_user">个人中心</string>
     <string name="action_weather">天气</string>
