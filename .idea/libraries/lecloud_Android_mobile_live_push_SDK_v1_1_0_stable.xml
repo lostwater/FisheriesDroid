@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="lecloud_Android_mobile_live_push_SDK_v1.1.0_stable">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/leRecorderSkin/libs/lecloud_Android_mobile_live_push_SDK_v1.1.0_stable.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

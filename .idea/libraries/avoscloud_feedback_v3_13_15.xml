@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="avoscloud-feedback-v3.13.15">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/fisherapp/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-feedback/v3.13.15/res" />
+      <root url="jar://$PROJECT_DIR$/fisherapp/build/intermediates/exploded-aar/cn.leancloud.android/avoscloud-feedback/v3.13.15/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
