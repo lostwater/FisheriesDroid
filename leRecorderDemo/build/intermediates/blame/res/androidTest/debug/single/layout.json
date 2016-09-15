@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\letv_recorder_bottom_float_mobile_layout.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\layout\\letv_recorder_bottom_float_mobile_layout.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\letv_recorder_bottom_float_layout.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\layout\\letv_recorder_bottom_float_layout.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\main_no_push_stream.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\layout\\main_no_push_stream.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_test.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_test.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\letv_recorder_top_float_mobile_layout.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\layout\\letv_recorder_top_float_mobile_layout.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\main_push_stream.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\layout\\main_push_stream.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\letv_recorder_machine_layout.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\layout\\letv_recorder_machine_layout.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_main.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_recorder.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\layout\\activity_recorder.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\letv_recorder_debug_view.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\layout\\letv_recorder_debug_view.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\letv_recorder_top_float_layout.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\layout\\letv_recorder_top_float_layout.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\main_letv_stream.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\layout\\main_letv_stream.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\activity_main3.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\layout\\activity_main3.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\letv_recorder_main_layout.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\layout\\letv_recorder_main_layout.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\letv_recorder_machine_item.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\layout\\letv_recorder_machine_item.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout\\letv_recorder_common_dialog.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\layout\\letv_recorder_common_dialog.xml"
+    }
+]

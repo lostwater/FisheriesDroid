@@ -1,0 +1,1256 @@
+[
+    {
+        "outputFile": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 61,
+                    "endOffset": 112
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 61,
+                        "endOffset": 114
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 117,
+                    "endColumn": 66,
+                    "endOffset": 179
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 120,
+                        "endColumn": 66,
+                        "endOffset": 182
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 184,
+                    "endColumn": 65,
+                    "endOffset": 245
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 65,
+                        "endOffset": 116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 250,
+                    "endColumn": 72,
+                    "endOffset": 318
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 121,
+                        "endColumn": 72,
+                        "endOffset": 189
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 323,
+                    "endColumn": 65,
+                    "endOffset": 384
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 194,
+                        "endColumn": 65,
+                        "endOffset": 255
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 389,
+                    "endColumn": 63,
+                    "endOffset": 448
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 260,
+                        "endColumn": 63,
+                        "endOffset": 319
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 453,
+                    "endColumn": 58,
+                    "endOffset": 507
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 324,
+                        "endColumn": 58,
+                        "endOffset": 378
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 512,
+                    "endColumn": 57,
+                    "endOffset": 565
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 92,
+                        "endColumn": 57,
+                        "endOffset": 145
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 570,
+                    "endColumn": 56,
+                    "endOffset": 622
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 498,
+                        "endColumn": 56,
+                        "endOffset": 550
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 627,
+                    "endColumn": 58,
+                    "endOffset": 681
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 556,
+                        "endColumn": 58,
+                        "endOffset": 610
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 686,
+                    "endColumn": 57,
+                    "endOffset": 739
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 325,
+                        "endColumn": 57,
+                        "endOffset": 378
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 744,
+                    "endColumn": 56,
+                    "endOffset": 796
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 210,
+                        "endColumn": 56,
+                        "endOffset": 262
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 801,
+                    "endColumn": 55,
+                    "endOffset": 852
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 384,
+                        "endColumn": 55,
+                        "endOffset": 435
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 857,
+                    "endColumn": 55,
+                    "endOffset": 908
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 441,
+                        "endColumn": 55,
+                        "endOffset": 492
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 913,
+                    "endColumn": 55,
+                    "endOffset": 964
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 268,
+                        "endColumn": 55,
+                        "endOffset": 319
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 969,
+                    "endColumn": 55,
+                    "endOffset": 1020
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 55,
+                        "endOffset": 202
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1025,
+                    "endColumn": 61,
+                    "endOffset": 1082
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 383,
+                        "endColumn": 61,
+                        "endOffset": 440
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1087,
+                    "endColumn": 62,
+                    "endOffset": 1145
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 445,
+                        "endColumn": 62,
+                        "endOffset": 503
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1150,
+                    "endColumn": 62,
+                    "endOffset": 1208
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 508,
+                        "endColumn": 62,
+                        "endOffset": 566
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1213,
+                    "endColumn": 61,
+                    "endOffset": 1270
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 571,
+                        "endColumn": 61,
+                        "endOffset": 628
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1275,
+                    "endColumn": 63,
+                    "endOffset": 1334
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 633,
+                        "endColumn": 63,
+                        "endOffset": 692
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1339,
+                    "endColumn": 59,
+                    "endOffset": 1394
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 697,
+                        "endColumn": 59,
+                        "endOffset": 752
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1399,
+                    "endColumn": 52,
+                    "endOffset": 1447
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 161,
+                        "endColumn": 52,
+                        "endOffset": 209
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1452,
+                    "endColumn": 47,
+                    "endOffset": 1495
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 58,
+                        "endColumn": 47,
+                        "endOffset": 101
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1500,
+                    "endColumn": 52,
+                    "endOffset": 1548
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 107,
+                        "endColumn": 52,
+                        "endOffset": 155
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1553,
+                    "endLine": 37,
+                    "endColumn": 12,
+                    "endOffset": 1843
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 195,
+                        "endLine": 20,
+                        "endColumn": 12,
+                        "endOffset": 489
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 1848,
+                    "endLine": 40,
+                    "endColumn": 12,
+                    "endOffset": 2003
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 530,
+                        "endLine": 25,
+                        "endColumn": 12,
+                        "endOffset": 687
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 2008,
+                    "endLine": 52,
+                    "endColumn": 12,
+                    "endOffset": 2533
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 917,
+                        "endLine": 27,
+                        "endColumn": 12,
+                        "endOffset": 1442
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 2538,
+                    "endLine": 60,
+                    "endColumn": 12,
+                    "endOffset": 2930
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 1535,
+                        "endLine": 52,
+                        "endColumn": 12,
+                        "endOffset": 1934
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 2935,
+                    "endLine": 67,
+                    "endColumn": 12,
+                    "endOffset": 3283
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 695,
+                        "endLine": 33,
+                        "endColumn": 12,
+                        "endOffset": 1049
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 68,
+                    "startColumn": 4,
+                    "startOffset": 3288,
+                    "endLine": 76,
+                    "endColumn": 12,
+                    "endOffset": 3750
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1057,
+                        "endLine": 43,
+                        "endColumn": 12,
+                        "endOffset": 1527
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 3755,
+                    "endLine": 83,
+                    "endColumn": 12,
+                    "endOffset": 4147
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 4,
+                        "startOffset": 1942,
+                        "endLine": 60,
+                        "endColumn": 12,
+                        "endOffset": 2340
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 61,
+                    "endOffset": 112
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 57,
+                        "endColumn": 61,
+                        "endOffset": 114
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 117,
+                    "endColumn": 66,
+                    "endOffset": 179
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\colors.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 120,
+                        "endColumn": 66,
+                        "endOffset": 182
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 184,
+                    "endColumn": 65,
+                    "endOffset": 245
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\exploded-aar\\LeRecorderDemo\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 65,
+                        "endOffset": 116
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 250,
+                    "endColumn": 72,
+                    "endOffset": 318
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\exploded-aar\\LeRecorderDemo\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 121,
+                        "endColumn": 72,
+                        "endOffset": 189
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 323,
+                    "endColumn": 65,
+                    "endOffset": 384
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\exploded-aar\\LeRecorderDemo\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 194,
+                        "endColumn": 65,
+                        "endOffset": 255
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 389,
+                    "endColumn": 63,
+                    "endOffset": 448
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\exploded-aar\\LeRecorderDemo\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 260,
+                        "endColumn": 63,
+                        "endOffset": 319
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 453,
+                    "endColumn": 58,
+                    "endOffset": 507
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\exploded-aar\\LeRecorderDemo\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 324,
+                        "endColumn": 58,
+                        "endOffset": 378
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 512,
+                    "endColumn": 57,
+                    "endOffset": 565
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 92,
+                        "endColumn": 57,
+                        "endOffset": 145
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 570,
+                    "endColumn": 56,
+                    "endOffset": 622
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 498,
+                        "endColumn": 56,
+                        "endOffset": 550
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 627,
+                    "endColumn": 58,
+                    "endOffset": 681
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 556,
+                        "endColumn": 58,
+                        "endOffset": 610
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 686,
+                    "endColumn": 57,
+                    "endOffset": 739
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 325,
+                        "endColumn": 57,
+                        "endOffset": 378
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 744,
+                    "endColumn": 56,
+                    "endOffset": 796
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 210,
+                        "endColumn": 56,
+                        "endOffset": 262
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 801,
+                    "endColumn": 55,
+                    "endOffset": 852
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 384,
+                        "endColumn": 55,
+                        "endOffset": 435
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 857,
+                    "endColumn": 55,
+                    "endOffset": 908
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 441,
+                        "endColumn": 55,
+                        "endOffset": 492
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 913,
+                    "endColumn": 55,
+                    "endOffset": 964
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 268,
+                        "endColumn": 55,
+                        "endOffset": 319
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 969,
+                    "endColumn": 55,
+                    "endOffset": 1020
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 55,
+                        "endOffset": 202
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1025,
+                    "endColumn": 61,
+                    "endOffset": 1082
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\exploded-aar\\LeRecorderDemo\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 383,
+                        "endColumn": 61,
+                        "endOffset": 440
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1087,
+                    "endColumn": 62,
+                    "endOffset": 1145
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\exploded-aar\\LeRecorderDemo\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 445,
+                        "endColumn": 62,
+                        "endOffset": 503
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1150,
+                    "endColumn": 62,
+                    "endOffset": 1208
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\exploded-aar\\LeRecorderDemo\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 508,
+                        "endColumn": 62,
+                        "endOffset": 566
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1213,
+                    "endColumn": 61,
+                    "endOffset": 1270
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\exploded-aar\\LeRecorderDemo\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 571,
+                        "endColumn": 61,
+                        "endOffset": 628
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1275,
+                    "endColumn": 63,
+                    "endOffset": 1334
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\exploded-aar\\LeRecorderDemo\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 633,
+                        "endColumn": 63,
+                        "endOffset": 692
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 23,
+                    "startColumn": 4,
+                    "startOffset": 1339,
+                    "endColumn": 59,
+                    "endOffset": 1394
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\exploded-aar\\LeRecorderDemo\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 697,
+                        "endColumn": 59,
+                        "endOffset": 752
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 24,
+                    "startColumn": 4,
+                    "startOffset": 1399,
+                    "endColumn": 52,
+                    "endOffset": 1447
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 161,
+                        "endColumn": 52,
+                        "endOffset": 209
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1452,
+                    "endColumn": 47,
+                    "endOffset": 1495
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 58,
+                        "endColumn": 47,
+                        "endOffset": 101
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1500,
+                    "endColumn": 52,
+                    "endOffset": 1548
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 107,
+                        "endColumn": 52,
+                        "endOffset": 155
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 27,
+                    "startColumn": 4,
+                    "startOffset": 1553,
+                    "endLine": 37,
+                    "endColumn": 12,
+                    "endOffset": 1843
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 195,
+                        "endLine": 20,
+                        "endColumn": 12,
+                        "endOffset": 489
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 1848,
+                    "endLine": 40,
+                    "endColumn": 12,
+                    "endOffset": 2003
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 530,
+                        "endLine": 25,
+                        "endColumn": 12,
+                        "endOffset": 687
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 2008,
+                    "endLine": 52,
+                    "endColumn": 12,
+                    "endOffset": 2533
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\exploded-aar\\LeRecorderDemo\\leRecorderSkin\\unspecified\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 917,
+                        "endLine": 27,
+                        "endColumn": 12,
+                        "endOffset": 1442
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 2538,
+                    "endLine": 60,
+                    "endColumn": 12,
+                    "endOffset": 2930
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 1535,
+                        "endLine": 52,
+                        "endColumn": 12,
+                        "endOffset": 1934
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 61,
+                    "startColumn": 4,
+                    "startOffset": 2935,
+                    "endLine": 67,
+                    "endColumn": 12,
+                    "endOffset": 3283
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 695,
+                        "endLine": 33,
+                        "endColumn": 12,
+                        "endOffset": 1049
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 68,
+                    "startColumn": 4,
+                    "startOffset": 3288,
+                    "endLine": 76,
+                    "endColumn": 12,
+                    "endOffset": 3750
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1057,
+                        "endLine": 43,
+                        "endColumn": 12,
+                        "endOffset": 1527
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 77,
+                    "startColumn": 4,
+                    "startOffset": 3755,
+                    "endLine": 83,
+                    "endColumn": 12,
+                    "endOffset": 4147
+                },
+                "from": {
+                    "file": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 54,
+                        "startColumn": 4,
+                        "startOffset": 1942,
+                        "endLine": 60,
+                        "endColumn": 12,
+                        "endOffset": 2340
+                    }
+                }
+            }
+        ]
+    }
+]

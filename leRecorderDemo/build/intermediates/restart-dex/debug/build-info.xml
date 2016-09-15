@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="armeabi,armeabi-v7a"
+    api-level="22"
+    density="xxhdpi"
+    format="7"
+    timestamp="140348597524126"
+    token="719281104376633862" >
+
+    <task
+        name="javac"
+        duration="281" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="667" />
+    <task
+        name="verifier"
+        duration="207" />
+
+    <artifact
+        location="L:\Documents\Projects\LeRecorderDemo\leRecorderDemo\build\outputs\apk\leRecorderDemo-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="140348597524126" >
+        <artifact
+            location="L:\Documents\Projects\LeRecorderDemo\leRecorderDemo\build\outputs\apk\leRecorderDemo-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

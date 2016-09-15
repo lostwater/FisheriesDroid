@@ -1,0 +1,7 @@
+#Thu Jun 02 01:08:08 CST 2016
+base.0=L\:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_ae695a4452d9eeb4f58da0027b306c56236e0f2e
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=L\:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_e89832862e9a09ef3d6099f35d7cf63e606a48cd\\classes.dex
+base.1=L\:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_e89832862e9a09ef3d6099f35d7cf63e606a48cd
+file.0=L\:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_ae695a4452d9eeb4f58da0027b306c56236e0f2e\\classes.dex

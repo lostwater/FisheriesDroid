@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "L:\\Documents\\Projects\\LeRecorderDemo\\leRecorderDemo\\build\\intermediates\\exploded-aar\\LeRecorderDemo\\leRecorderSkin\\unspecified\\res\\drawable-hdpi-v4\\ic_launcher.png"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\exploded-aar\\FisheriesDroid\\leRecorderSkin\\unspecified\\res\\drawable-hdpi-v4\\ic_launcher.png"
+    }
+]

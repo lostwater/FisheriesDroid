@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\main_title_button_lift_push.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\drawable\\main_title_button_lift_push.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\main_input_edit.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\drawable\\main_input_edit.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\main_title_button_right_push.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\drawable\\main_title_button_right_push.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\main_toast_text.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\drawable\\main_toast_text.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\main_create_stream_url.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\drawable\\main_create_stream_url.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\main_title_button_middle.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\drawable\\main_title_button_middle.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\main_title_button_lift.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\drawable\\main_title_button_lift.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\main_title_button_right.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\drawable\\main_title_button_right.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\main_start_button.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\drawable\\main_start_button.xml"
+    },
+    {
+        "merged": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\main_title_button_middle_push.xml",
+        "source": "L:\\Documents\\Projects\\FisheriesDroid\\leRecorderDemo\\build\\intermediates\\bundles\\debug\\res\\drawable\\main_title_button_middle_push.xml"
+    }
+]
